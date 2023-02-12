@@ -1,0 +1,125 @@
+.main{
+    height: 80vh;
+    background-image: url("../assets/ocean.webp");
+    background-size: cover;
+   
+    color: white;
+    .ctnr{
+        &-1{
+            margin-top: 4%;
+            width: 100%;
+        }
+       
+        &-1 span{
+            color: $primary-color;
+            
+            
+        }
+        &-1 h1{
+            font-size: 50px;
+        }
+        &-2{
+           
+            width: 60%;
+            font-size: 12px;
+            border-top: 1px solid gray;  
+        }
+        &-3{
+         
+            gap: 1em;
+            margin-top: 20px;
+            
+            img{
+                height: 30px;
+                width: 30px;        
+            }
+            button{
+                @include forBtn($primary-color,$secondary-color);
+                border-radius: 10px;
+                font-weight: map-get($map: $font-weight, $key: bold );
+            }
+            .btn-watch{
+                gap: 10px;
+                font-weight: map-get($map: $font-weight, $key: bold );
+            }
+
+        }
+    }
+    @media (max-width:1200px){
+        .main{
+          height: 85vh;
+        }
+        .main .ctnr .ctnr-1 h1{
+          font-size: 45px;
+        }
+        .main .ctnr-2{
+          font-size: 10px;
+        }
+    }
+    @media (max-width:1000px){
+        .main{
+          height: 70vh;
+        }
+        .main .ctnr .ctnr-1 h1{
+          font-size: 30px;
+        }
+        .main .ctnr-2{
+          font-size: 8px;
+        }
+    }
+    @media (max-width:672px){
+        .main{
+          height: 65vh;
+        }
+        .main .ctnr .ctnr-1 h1{
+          font-size: 15px;
+        }
+        .main .ctnr-2{
+          font-size: 5px;
+        }
+        .ctnr-3{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          
+        }
+        .main .ctnr-3 button{
+            font-weight: 400;
+            padding: 10px;
+        }
+        .main .ctnr-3 .btn-watch{
+            font-weight: 400;
+        }
+    }
+    @media (max-width:420px){
+        .main{
+          height: 67vh;
+        }
+        .ctnr{
+          padding-top: 5px;
+        }
+        .main .ctnr .ctnr-1 h1{
+          font-size: 10px;
+        }
+        .main .ctnr-2{
+          font-size: 3px;
+        }
+        .ctnr-3{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          
+        }
+        .main .ctnr-3 button{
+          font-weight: 400;
+          padding: 10px;
+        }
+        .main .ctnr-3 .btn-watch{
+          font-weight: 400;
+        }
+    }
+   
+
+}

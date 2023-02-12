@@ -1,0 +1,7 @@
+.b2{
+    @include forBtn($secondary-color,$primary-color);
+    font-weight: map-get($map: $font-weight, $key: medium );
+}
+.b2:hover{
+    @include forHover($primary-color,$secondary-color);
+}

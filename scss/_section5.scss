@@ -1,0 +1,26 @@
+.lower-5{
+    .lrg-txt-5{
+        font-weight: 500;
+        font-size: 15px;
+    }
+    .sml-text-5{
+        font-size: 10px;
+    }
+}
+.sp-p{
+    color: $primary-color;
+}
+.b3{
+    @include forBtn($primary-color,$secondary-color);
+}
+.b3:hover{
+    @include forHover($secondary-color,$primary-color);
+}
+@media (max-width:768px){
+    .card-col{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+}
